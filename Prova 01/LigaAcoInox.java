@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class LigaAcolnox{
+public class LigaAcoInox{
         private double aco;
         private double cromo;
         private double niquel;
 
-        LigaAcolnox(double aco){
+        LigaAcoInox(double aco){
                 this.setAco(aco);
         }
 
@@ -39,7 +39,7 @@ public class LigaAcolnox{
         public static void main(String[] args){
                 Scanner scanner = new Scanner(System.in);
                 double AP = scanner.nextDouble();
-                LigaAcolnox ligaAco = new LigaAcolnox(AP);
+                LigaAcoInox ligaAco = new LigaAcoInox(AP);
 
                 ligaAco.calculaNiveis();
 
