@@ -42,6 +42,7 @@ public class MultaVelocidade{
                 Scanner leitor = new Scanner(System.in);
                 int VMAX = leitor.nextInt();
                 int VMOTORA = leitor.nextInt();
+                leitor.close();
 
                 MultaVelocidade multaVelocidade = new MultaVelocidade(VMAX, VMOTORA);
                 multaVelocidade.calcularMulta();

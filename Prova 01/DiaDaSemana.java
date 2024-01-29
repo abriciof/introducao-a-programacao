@@ -33,6 +33,7 @@ public class DiaDaSemana{
         public static void main(String[] args){
                 Scanner leitor = new Scanner(System.in);
                 int numDia = leitor.nextInt();
+                leitor.close();
 
                 DiaDaSemana diaDaSemana = new DiaDaSemana(numDia);
                 diaDaSemana.imprimeDia();

@@ -37,8 +37,10 @@ public class LigaAcoInox{
         }
 
         public static void main(String[] args){
-                Scanner scanner = new Scanner(System.in);
-                double AP = scanner.nextDouble();
+                Scanner leitor = new Scanner(System.in);
+                double AP = leitor.nextDouble();
+                leitor.close();
+
                 LigaAcoInox ligaAco = new LigaAcoInox(AP);
 
                 ligaAco.calculaNiveis();

@@ -36,12 +36,14 @@ public class Tartaruga{
 
         public static void main(String[] args){
 
-                Scanner scanner = new Scanner(System.in);
+                Scanner leitor = new Scanner(System.in);
 
-                float ta1 = scanner.nextFloat();
-                float tc1 = scanner.nextFloat();
-                float ta2 = scanner.nextFloat();
-                float tc2 = scanner.nextFloat();
+                float ta1 = leitor.nextFloat();
+                float tc1 = leitor.nextFloat();
+                float ta2 = leitor.nextFloat();
+                float tc2 = leitor.nextFloat();
+
+                leitor.close();
 
                 Tartaruga tart1 = new Tartaruga(ta1, tc1);
                 Tartaruga tart2 = new Tartaruga(ta2, tc2);

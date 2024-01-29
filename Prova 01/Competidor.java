@@ -34,12 +34,14 @@ public class Competidor{
         }
 
         public static void main(String[] args){
-                Scanner scanner = new Scanner(System.in);
-                String nome1 = scanner.nextLine();
-                int pontos1 = scanner.nextInt(); 
-                scanner.nextLine();
-                String nome2 = scanner.nextLine();
-                int pontos2 = scanner.nextInt();
+                Scanner leitor = new Scanner(System.in);
+                String nome1 = leitor.nextLine();
+                int pontos1 = leitor.nextInt(); 
+                leitor.nextLine();
+                String nome2 = leitor.nextLine();
+                int pontos2 = leitor.nextInt();
+                leitor.close();
+
 
                 Competidor comp1 = new Competidor(nome1, pontos1);
                 Competidor comp2 = new Competidor(nome2, pontos2);

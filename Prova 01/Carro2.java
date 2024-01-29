@@ -32,9 +32,9 @@ public class Carro2{
 
         public static void main(String[] args){
                 Scanner leitor = new Scanner(System.in);
-
                 int AF = leitor.nextInt();
                 float V = leitor.nextFloat();
+                leitor.close();
 
                 Carro2 carro = new Carro2(AF, V);
                 carro.calculaTaxa();

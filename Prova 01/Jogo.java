@@ -1,4 +1,4 @@
-mport java.util.Scanner;
+import java.util.Scanner;
 
 public class Jogo{
         private int numDescoberto;
@@ -35,6 +35,7 @@ public class Jogo{
                 Scanner leitor = new Scanner(System.in);
                 int ND = leitor.nextInt();
                 int NT = leitor.nextInt();
+                leitor.close();
                 Jogo jogo = new Jogo(ND, NT);
                 jogo.verifica();
 

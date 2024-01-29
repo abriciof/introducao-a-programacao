@@ -29,8 +29,9 @@ public class Carro{
                 System.out.printf("%.2f", this.getCustoFinal());
         }
         public static void main(String[] args){
-                Scanner scanner = new Scanner(System.in);
-                double C = scanner.nextDouble();
+                Scanner leitor = new Scanner(System.in);
+                double C = leitor.nextDouble();
+                leitor.close();
 
                 Carro car = new Carro(C);
                 car.imprimeValorFinal();

@@ -18,6 +18,8 @@ public class Temperatura{
         public static void main(String[] args){
                 Scanner leitor = new Scanner(System.in);
                 float grasF = leitor.nextFloat();
+                leitor.close();
+                
                 Temperatura temperatura = new Temperatura(grasF);
                 temperatura.converteCelsius();
         }
