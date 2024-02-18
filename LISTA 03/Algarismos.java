@@ -1,21 +1,27 @@
 import java.util.Scanner;
-
-public class Algarismos{
+public class Algarismos
+{
     private int num;
-    Algarismos(int n){
+    Algarismos(int n)
+    {
         this.setNum(n);
     }
-    public int getNum(){
+    public int getNum()
+    {
         return this.num;
     }
-    public void setNum(int n){
+    public void setNum(int n)
+    {
         this.num = n;
     }
-    public void verificaNum(){
-        int fator = this.getNum(); 
+    public void verificaNum()
+    {
+        int fator = this.getNum();
         int soma = 0;
-        if (fator % 2 == 0){
-            while(fator != 0){
+        if(fator % 2 == 0)
+        {
+            while(fator != 0)
+            {
                 soma = soma + (fator % 10);
                 fator = fator / 10;
             }
@@ -23,12 +29,11 @@ public class Algarismos{
         }
         System.out.printf("Bye Bye");
     }
-
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
         Scanner leitor = new Scanner(System.in);
         int num = leitor.nextInt();
         leitor.close();
-
         Algarismos alg = new Algarismos(num);
         alg.verificaNum();
     }
