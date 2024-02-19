@@ -1,66 +1,51 @@
 import java.util.Scanner;
-public class MultaVelocidade
-{
+
+public class MultaVelocidade{
+    
     private int max, motorista;
-    MultaVelocidade(int max, int motorista)
-    {
+    MultaVelocidade(int max, int motorista){
         this.setMaxima(max);
         this.setMotorista(motorista);
     }
-    MultaVelocidade()
-    {
-        this.setMaxima(0);
-        this.setMotorista(0);
-    }
-    public void setMaxima(int novaMax)
-    {
+
+    public void setMaxima(int novaMax){
         this.max = novaMax;
     }
-    public void setMotorista(int novaMotorista)
-    {
+    public void setMotorista(int novaMotorista){
         this.motorista = novaMotorista;
     }
-    public int getMaxima()
-    {
+    public int getMaxima(){
         return this.max;
     }
-    public int getMotorista()
-    {
+
+    public int getMotorista(){
         return this.motorista;
     }
-    public void calcularMulta()
-    {
+
+    public void calcularMulta(){
         int multa = 0;
-        if((this.getMotorista() - this.getMaxima()) > 0)
-        {
-            if((this.getMotorista() - this.getMaxima()) <= 10)
-            {
+        if((this.getMotorista() - this.getMaxima()) > 0){
+            if((this.getMotorista() - this.getMaxima()) <= 10){
                 multa = 50;
-            }
-            else if((this.getMotorista() - this.getMaxima()) <= 30)
-            {
+            }else if((this.getMotorista() - this.getMaxima()) <= 30){
                 multa = 100;
-            }
-            else if((this.getMotorista() - this.getMaxima()) > 30)
-            {
+            }else if((this.getMotorista() - this.getMaxima()) > 30){
                 multa = 200;
             }
-            else
-            {
+            else{
                 multa = 0;
             }
-        }
-        else
-        {
+        }else{
             multa = 0;
         }
         System.out.println(multa);
     }
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args){
         Scanner leitor = new Scanner(System.in);
         int VMAX = leitor.nextInt();
         int VMOTORA = leitor.nextInt();
+        leitor.close()
         MultaVelocidade multaVelocidade = new MultaVelocidade(VMAX, VMOTORA);
         multaVelocidade.calcularMulta();
     }

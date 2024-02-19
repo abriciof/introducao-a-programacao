@@ -5,7 +5,7 @@ public class Vetor
     private int tamanho;
     Vetor()
     {
-        this.setTamanho(7);
+        this.setTamanho(6);
         vet = new int[this.getTamanho()];
     }
     Vetor(int novoTamanho)
