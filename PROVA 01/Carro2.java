@@ -30,11 +30,11 @@ public class Carro2
         float imposto;
         if(this.getAno() >= 1990)
         {
-            taxa = 0.015 f;
+            taxa = 0.015f;
         }
         else
         {
-            taxa = 0.01 f;
+            taxa = 0.01f;
         }
         imposto = taxa * this.getValor();
         System.out.printf("%.2f", imposto);

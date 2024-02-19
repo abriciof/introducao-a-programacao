@@ -34,7 +34,7 @@ public class Matriz
     {
         return this.qtColunas;
     }
-    public int imprimeDiferencaMaiorMenor()
+    public void imprimeDiferencaMaiorMenor()
     {
         int maior = this.getElemento(0, 0);
         int menor = this.getElemento(0, 0);

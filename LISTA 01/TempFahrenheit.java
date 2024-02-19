@@ -16,7 +16,7 @@ public class TempFahrenheit
     }
     public void ConverteTemp()
     {
-        float celsius = (5.0 f / 9) * (this.getGrausFahrenheit() - 32);
+        float celsius = (5.0f / 9) * (this.getGrausFahrenheit() - 32);
         System.out.printf("Temperatura em F: %.1f\n", this.getGrausFahrenheit());
         System.out.printf("Temperatura em C: %.1f\n", celsius);
     }
