@@ -53,7 +53,6 @@ public class Matriz
             }
         }
         System.out.println(maior - menor);
-        return maior;
     }
     public static void main(String[] args)
     {
