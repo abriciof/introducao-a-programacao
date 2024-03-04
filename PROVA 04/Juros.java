@@ -42,4 +42,4 @@ public class Juros
 		juros.imprimeTotal();
 		leitor.close();
 	}
-}
+} 
