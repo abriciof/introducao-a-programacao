@@ -58,6 +58,7 @@ public class Vetor
             aux = leitor.nextInt();
             vetor.setElemento(i, aux);
         }
+        leitor.close();
         vetor.imprimeOrdemDecrescente();
     }
 }
